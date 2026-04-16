@@ -5,7 +5,6 @@ public class ReverseString {
         String str = "defect";
 
         String original = str;
-       // int strLen = str.length()-1;
         String revStr = "";
         for(int i = str.length()-1; i >= 0; i--){
             revStr += str.charAt(i);

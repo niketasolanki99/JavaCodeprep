@@ -15,7 +15,7 @@ public class CheckAnagrams {
             if(!map.containsKey(ch)){
                 return false;
             }
-            map.put(ch, map.get(ch)-1); //
+            map.put(ch, map.get(ch)-1);
             if (map.get(ch) == 0){
                 map.remove(ch);
             }
@@ -23,8 +23,8 @@ public class CheckAnagrams {
         return map.isEmpty();
     }
     public static void main(String[] args) {
-        String str1 = "car";
-        String str2 = "rac";
+        String str1 = "listen";
+        String str2 = "silent";
         System.out.println(isAnagram(str1,str2));
 
 

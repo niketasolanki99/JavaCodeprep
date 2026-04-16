@@ -7,9 +7,14 @@ public class SecondHighestNumber {
         List<Integer> list = Arrays.asList(5,1,2,3,4,7,5,6);
 
         int[] arr = {2,3,4,6,7};
-        for(int i =0; i <= arr.length-1; i++){
-            System.out.println(i);
-        }
+
+
+
+
+
+
+
+
         //second-highest number
 
 
