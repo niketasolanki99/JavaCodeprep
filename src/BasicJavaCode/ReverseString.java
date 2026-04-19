@@ -1,4 +1,4 @@
-package java8Questions;
+package BasicJavaCode;
 
 public class ReverseString {
     public static void main(String[] args) {
@@ -17,9 +17,5 @@ public class ReverseString {
         else {
             System.out.println("false");
         }
-
-       }
-
-
-
+    }
 }

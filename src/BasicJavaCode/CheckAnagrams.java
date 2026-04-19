@@ -1,4 +1,4 @@
-package java8Questions;
+package BasicJavaCode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -26,10 +26,5 @@ public class CheckAnagrams {
         String str1 = "listen";
         String str2 = "silent";
         System.out.println(isAnagram(str1,str2));
-
-
-
-
-
     }
 }

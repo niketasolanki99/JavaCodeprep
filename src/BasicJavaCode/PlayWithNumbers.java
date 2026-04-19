@@ -16,12 +16,11 @@ public class PlayWithNumbers {
         for(int j = N; j >=1; j--){
             System.out.println(j);
         }
-        System.out.println("evens");
-        // Then print only even numbers
 
+        // Then print only even numbers
+        System.out.println("print only even number exists till N");
         for(int k = 1; k <= N; k++){
             if (k%2 == 0){
-                System.out.println("even numbers");
                 System.out.println(k);
             }
         }

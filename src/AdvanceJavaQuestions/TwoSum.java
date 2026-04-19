@@ -11,18 +11,14 @@ public class TwoSum {
         Map<Integer, Integer> map = new HashMap<>();
 
         for(int i = 0; i < arr.length; i++){
-            int extra = target - arr[i];    //4
-
+            int extra = target - arr[i];
             if(map.containsKey(extra)){
-                //it'll print the indices
-                System.out.println(map.get(extra) + ", " + i);  //4, 5
-                //System.out.println("the values : " +  extra + " and " + arr[i]);
+                System.out.println( "Index of the elements : " + map.get(extra) + ", " + i);
+                System.out.println("Actual values : " +  extra + " and " + arr[i]);
                 break;
             }
             map.put(arr[i], i);
 
         }
-
-
     }
 }

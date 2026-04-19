@@ -1,7 +1,4 @@
-package java8Questions;
-
-import java.util.Arrays;
-import java.util.OptionalInt;
+package BasicJavaCode;
 
 public class SumOfNumber {
     public static void main(String[] args) {
@@ -11,7 +8,7 @@ public class SumOfNumber {
             sum = sum + num%10;
             num = num/10;
         }
-        System.out.println(sum);
+        System.out.println("Sum of the Numbers " + sum);
 
 
     }

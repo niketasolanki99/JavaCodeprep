@@ -7,7 +7,6 @@ public class VectorClass {
         Vector<String> vector = new Vector<>();
 
         vector.add("niketa");
-
         System.out.println(vector);
     }
 }
