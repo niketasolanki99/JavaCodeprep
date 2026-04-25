@@ -12,21 +12,22 @@ public class ReverseArray {
         int left =0;
         int right = arr.length-1;
         while (left < right){
-            int temp = right;
-            right = left;
-            left = temp;
+            int temp = arr[right];
+            arr[right] = arr[left];
+            arr[left] = temp;
 
             left++;
             right--;
         }
-       System.out.println("reverse of the array : " + Arrays.toString(arr));
+        for(int num : arr){
+            System.out.print(num + " ");
+        }
+        List<Integer> list = Arrays.asList(50,70,40,60,30,80,20,90,10,100);
+       // Collections.reverse(list);
+        //System.out.println("Reverse of the List : " + list);
 
-
-        List<Integer> list = Arrays.asList(50,40,30,20,100);
-
-        Collections.reverse(list);
         List<Integer> sortedList = list.stream().sorted(Comparator.reverseOrder()).toList();
-        System.out.println(list);
+       // System.out.println("Reverse of the sorted List: " + sortedList);
 
     }
 }

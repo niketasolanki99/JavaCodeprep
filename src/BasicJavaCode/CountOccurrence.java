@@ -11,14 +11,10 @@ public class CountOccurrence {
         }
         return count;
     }
-
     public static void main(String[] args) {
         int[] arr = {0,0,0,0,1,1,0,1,0,1,7,9,4,5};
         int target = 0;
-
         int occurrences = countOccur(arr, target);
-        System.out.println(occurrences);
-
-
+        System.out.println("Number of occurrences of " + target + " in the array is " + occurrences);
     }
 }

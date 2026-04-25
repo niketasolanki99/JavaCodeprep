@@ -12,10 +12,10 @@ public class PalindromeNumber {
             num = num/10;
         }
         if (originalNum == revNum){
-            System.out.println("Number is palindrome: " + revNum);
+            System.out.println("Palindrome Number : " + revNum);
         }
         else {
-            System.out.println("Not a Palindrome Number");
+            System.out.println("Not a Palindrome Number!!");
         }
 
     }
