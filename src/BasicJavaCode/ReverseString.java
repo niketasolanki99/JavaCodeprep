@@ -18,5 +18,13 @@ public class ReverseString {
             sb.append(str.charAt(i));
         }*/
         System.out.println("Reverse of the Input String " + sb);
+
+        String str1 = "Java is a object oriented language";
+        String[] words = str1.split(" ");
+        StringBuilder result = new StringBuilder();
+        for(int i = words.length - 1; i >= 0; i--){
+            result.append(words[i]).append(" ");
+        }
+        System.out.println(result.toString().trim());
     }
 }

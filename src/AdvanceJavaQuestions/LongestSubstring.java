@@ -13,20 +13,21 @@ public class LongestSubstring {
 
         int left = 0, maxLen = 0, startIndex = 0;
         Set<Character> set = new HashSet<>();
-        for(int right = 0; right < str.length(); right++){
+        for (int right = 0; right < str.length(); right++) {
             char ch = str.charAt(right);
-            while (set.contains(ch)){
+            while (set.contains(ch)) {
                 set.remove(str.charAt(left));
                 left++;
             }
             set.add(ch);
-        if(right-left+1 > maxLen){
-                maxLen = right-left+1;
+            if (right - left + 1 > maxLen) {
+                maxLen = right - left + 1;
                 startIndex = left;
+
             }
+            //String longestSub = str.substring(startIndex, startIndex+maxLen);
+            //System.out.println("Longest SubString exists in the String is --> " + longestSub);
         }
-        String longestSub = str.substring(startIndex, startIndex+maxLen);
-        System.out.println("Longest SubString exists in the String is --> " + longestSub);
         System.out.println("Length of the Longest SubString is " + maxLen);
     }
 }
