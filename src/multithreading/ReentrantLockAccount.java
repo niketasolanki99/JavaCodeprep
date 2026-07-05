@@ -12,9 +12,11 @@ public class ReentrantLockAccount {
     public void withdraw(double amount){
         lock.lock();
         try {
+            lock.wait();
             balance -= amount;
-        }
-        finally {
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        } finally {
             lock.unlock();
         }
     }
