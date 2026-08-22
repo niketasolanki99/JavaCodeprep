@@ -1,0 +1,13 @@
+package BasicJavaCode;
+
+public class ReverseNumber {
+    public static void main(String[] args) {
+        int num = 86309847;
+        int revNum = 0;
+        while (num != 0){
+            revNum = num%10 + revNum*10;
+            num /=10;
+        }
+        System.out.println(revNum);
+    }
+}
